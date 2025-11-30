@@ -26,7 +26,7 @@ int main(int argc, char const* argv[])
     // Convert IPv4 and IPv6 addresses from text to binary form
     if (inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr) <= 0) {
         perror("Address failed to convert");
-        return -1;
+        return EXIT_FAILURE;
     }
 
     if ((status = connect(client_fd, (struct sockaddr*)&serv_addr, sizeof(serv_addr))) < 0) {
