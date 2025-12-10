@@ -1,7 +1,7 @@
 Simple TCP Client
 
 This is a minimal TCP client written in C++.
-It connects to a server running on 127.0.0.1:8080, sends user-typed commands, and prints the server's response.
+It connects to a server running on 127.0.0.1:19879, sends user-typed commands, and prints the server's response.
 
 Build
 g++ client.cpp -o client
