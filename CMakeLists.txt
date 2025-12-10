@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(client)
+project(TrialClient)
 
-add_executable(client client.cpp)
+add_executable(TrialClient client.cpp)
 
-target_link_libraries(client PRIVATE pthread)
+target_link_libraries(TrialClient PRIVATE pthread)
